@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilados de Popys - Catálogo Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="assets/logo-favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Hilados de Popys" class="logo-img">
+                    <h1>Hilados de Popys</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#personalizados">Personalizados</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-background">
+            <img src="assets/hero-background.jpg" alt="Hilados de Popys - Arte en cada hilo" class="hero-bg-img">
+        </div>
+        <div class="hero-content">
+            <img src="assets/logo-hero.png" alt="Hilados de Popys" class="hero-logo">
+            <h2>Arte en cada hilo</h2>
+            <p>Productos únicos tejidos con creatividad y dedicación</p>
+            <a href="#catalogo" class="btn">Ver Catálogo</a>
+        </div>
+    </section>
+
+    <!-- Sección Catálogo -->
+    <section id="catalogo" class="catalogo">
+        <div class="container">
+            <h2 class="section-title">Nuestro Catálogo</h2>
+            <p class="section-subtitle">Descubre nuestros productos artesanales</p>
+            
+            <div class="filtros">
+                <button class="filtro-btn active" data-categoria="todos">Todos</button>
+                <button class="filtro-btn" data-categoria="accesorios">Accesorios</button>
+                <button class="filtro-btn" data-categoria="hogar">Hogar</button>
+                <button class="filtro-btn" data-categoria="niños">Para Niños</button>
+            </div>
+            
+            <div class="productos-grid">
+                <!-- Producto 1: Llaveros -->
+                <div class="producto-card" data-categoria="accesorios">
+                    <div class="producto-img">
+                        <img src="assets/productos/llaveros-1.jpg" alt="Llaveros tejidos">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Llaveros Personalizados</h3>
+                        <p>Llaveros tejidos a crochet con diseños únicos y personalizados</p>
+                        <div class="producto-precio">$1.200</div>
+                        <button class="btn-producto">Ver Detalles</button>
+                    </div>
+                </div>
+                
+                <!-- Producto 2: Riñonera-Bandolera -->
+                <div class="producto-card" data-categoria="accesorios">
+                    <div class="producto-img">
+                        <img src="assets/productos/rinonera-1.jpg" alt="Riñonera bandolera tejida">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Riñonera-Bandolera</h3>
+                        <p>Bandolera práctica y moderna tejida con hilos de colores</p>
+                        <div class="producto-precio">$5.800</div>
+                        <button class="btn-producto">Ver Detalles</button>
+                    </div>
+                </div>
+                
+                <!-- Producto 3: Portaplatos -->
+                <div class="producto-card" data-categoria="hogar">
+                    <div class="producto-img">
+                        <img src="assets/productos/portaplatos-1.jpg" alt="Portaplatos tejidos">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Portaplatos Decorativos</h3>
+                        <p>Portaplatos tejidos que protegen tus mesas y decoran tu hogar</p>
+                        <div class="producto-precio">$2.500</div>
+                        <button class="btn-producto">Ver Detalles</button>
+                    </div>
+                </div>
+                
+                <!-- Producto 4: Cartuchera -->
+                <div class="producto-card" data-categoria="accesorios">
+                    <div class="producto-img">
+                        <img src="assets/productos/cartuchera-1.jpg" alt="Cartuchera tejida">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Cartucheras Originales</h3>
+                        <p>Cartucheras tejidas con diseños creativos para tus útiles</p>
+                        <div class="producto-precio">$3.200</div>
+                        <button class="btn-producto">Ver Detalles</button>
+                    </div>
+                </div>
+                
+                <!-- Producto 5: Set Materos -->
+                <div class="producto-card" data-categoria="hogar">
+                    <div class="producto-img">
+                        <img src="assets/productos/set-materos-1.jpg" alt="Set materos tejido">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Set Materos Completo</h3>
+                        <p>Set incluye portatermo y base para mate, tejido con amor</p>
+                        <div class="producto-precio">$4.800</div>
+                        <button class="btn-producto">Ver Detalles</button>
+                    </div>
+                </div>
+                
+                <!-- Producto 6: Cartera Niños -->
+                <div class="producto-card" data-categoria="niños">
+                    <div class="producto-img">
+                        <img src="assets/productos/cartera-ninos-1.jpg" alt="Cartera para niños">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Carteras Infantiles</h3>
+                        <p>Carteras tejidas para niños con personajes y diseños divertidos</p>
+                        <div class="producto-precio">$3.500</div>
+                        <button class="btn-producto">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Personalizados -->
+    <section id="personalizados" class="personalizados">
+        <div class="container">
+            <div class="personalizados-content">
+                <div class="personalizados-text">
+                    <h2 class="section-title">Diseños Personalizados</h2>
+                    <p>¿Tienes una idea en mente? ¡Hagámosla realidad juntos!</p>
+                    <p>En Hilados de Popys, transformamos tus ideas en productos únicos. Presenta tu concepto y le agregaremos nuestra impronta creativa para crear algo verdaderamente especial.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Diseños únicos y originales</li>
+                        <li><i class="fas fa-check"></i> Materiales de primera calidad</li>
+                        <li><i class="fas fa-check"></i> Atención personalizada</li>
+                        <li><i class="fas fa-check"></i> Asesoramiento en diseño</li>
+                    </ul>
+                    <a href="#contacto" class="btn">Solicitar Presupuesto</a>
+                </div>
+                <div class="personalizados-img">
+                    <img src="assets/productos/personalizados.jpg" alt="Proceso creativo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="sobre-mi">
+        <div class="container">
+            <div class="sobre-mi-content">
+                <div class="sobre-mi-img">
+                    <img src="assets/productos/sobre-mi.jpg" alt="Popys - Creadora">
+                </div>
+                <div class="sobre-mi-text">
+                    <h2 class="section-title">Sobre Mí</h2>
+                    <p>Hola, soy Popys, la creadora detrás de este emprendimiento. Desde pequeña me ha apasionado el mundo de las manualidades y el tejido.</p>
+                    <p>Con los años, transformé esta pasión en mi profesión, creando productos únicos que combinan técnicas tradicionales con diseños modernos y originales.</p>
+                    <p>Mi taller en calle "Sarmiento 1962" es el lugar donde doy vida a cada creación, siempre buscando superar las expectativas de mis clientes con calidad y dedicación en cada detalle.</p>
+                    <div class="iconos">
+                        <div class="icono-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Hecho con amor</span>
+                        </div>
+                        <div class="icono-item">
+                            <i class="fas fa-award"></i>
+                            <span>Calidad garantizada</span>
+                        </div>
+                        <div class="icono-item">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <span>Artesanía única</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-subtitle">¿Tienes alguna consulta? ¡No dudes en escribirme!</p>
+            
+            <div class="contacto-content">
+                <div class="contacto-info">
+                    <div class="contacto-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Sarmiento 1961 - Bella Vista, Corrientes</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+54 3777 590006</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hiladosdepopys@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horarios de atención</h3>
+                            <p>Lunes a Viernes: 9:00 - 18:00</p>
+                            <p>Sábados: 10:00 - 14:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contacto-form">
+                    <form id="formulario-contacto">
+                        <div class="form-group">
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Hilados de Popys</h2>
+                    <p>Arte en cada hilo</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#catalogo">Catálogo</a></li>
+                        <li><a href="#personalizados">Personalizados</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/loshiladosdepopys/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/3777590006"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hilados de Popys. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para detalles del producto -->
+    <div id="modal-producto" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Contenido dinámico del modal -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
